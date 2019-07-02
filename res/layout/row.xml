@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/item_name_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hkd_string"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="-1dp"
+        android:text="Item name"
+        android:textSize="18sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/hkd_string"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/price_text"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#FFFFFF"
+        android:text="HKD$ "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/price_text"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="51dp"
+        android:text="Price"
+        android:textColor="#FF0000"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="49dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="64dp"
+        android:layout_toEndOf="@+id/item_type_text"
+        app:srcCompat="@drawable/read_more_btn"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <TextView
+        android:id="@+id/good_type_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="82dp"
+        android:text="Type: "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/item_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="83dp"
+        android:text="Good's Type String"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
